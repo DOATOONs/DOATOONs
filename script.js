@@ -15,8 +15,8 @@ function loadComponent(elementId, filePath) {
 
 // Load header and footer on page load
 document.addEventListener('DOMContentLoaded', function() {
-    loadComponent('header-container', 'header.html');
-    loadComponent('footer-container', 'footer.html');
+    loadComponent('header-container', '/DOATOONs/header.html');
+    loadComponent('footer-container', '/DOATOONs/footer.html');
 });
 
 // Smooth scroll for navigation links
