@@ -1,0 +1,210 @@
+/* Services Page Specific Styles */
+
+.page-header {
+    background: linear-gradient(135deg, var(--primary-dark-green) 0%, var(--primary-green) 100%);
+    color: var(--text-light);
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 40px;
+    background-color: var(--white);
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.service-card {
+    background: linear-gradient(135deg, rgba(45, 106, 79, 0.02) 0%, rgba(64, 145, 108, 0.02) 100%);
+    border: 2px solid rgba(64, 145, 108, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary-green);
+    box-shadow: 0 20px 40px rgba(45, 106, 79, 0.12);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: var(--text-dark);
+    opacity: 0.85;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.service-features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.service-features li {
+    color: var(--secondary-green);
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+.service-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--secondary-green) 0%, var(--light-green) 100%);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.service-btn:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(64, 145, 108, 0.3);
+}
+
+/* Process Section */
+.process-section {
+    padding: 80px 40px;
+    background: linear-gradient(135deg, rgba(45, 106, 79, 0.03) 0%, rgba(64, 145, 108, 0.03) 100%);
+}
+
+.process-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-dark-green);
+    margin-bottom: 60px;
+}
+
+.process-steps {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.step {
+    text-align: center;
+    padding: 30px;
+}
+
+.step-number {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--secondary-green) 0%, var(--light-green) 100%);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.step h4 {
+    color: var(--primary-green);
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.step p {
+    color: var(--text-dark);
+    opacity: 0.8;
+    font-size: 0.95rem;
+}
+
+/* Services CTA Section */
+.services-cta {
+    padding: 80px 40px;
+    background: linear-gradient(135deg, var(--secondary-green) 0%, var(--primary-green) 100%);
+    text-align: center;
+    color: var(--text-light);
+}
+
+.services-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.services-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 60px 20px;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .services-section {
+        padding: 60px 20px;
+    }
+
+    .services-container {
+        gap: 25px;
+    }
+
+    .service-card {
+        padding: 30px;
+    }
+
+    .process-section {
+        padding: 60px 20px;
+    }
+
+    .process-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .process-steps {
+        gap: 20px;
+    }
+
+    .services-cta {
+        padding: 60px 20px;
+    }
+
+    .services-cta h2 {
+        font-size: 1.8rem;
+    }
+}
