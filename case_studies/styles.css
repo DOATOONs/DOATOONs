@@ -1,0 +1,234 @@
+/* Case Studies Page Specific Styles */
+
+.page-header {
+    background: linear-gradient(135deg, var(--primary-dark-green) 0%, var(--primary-green) 100%);
+    color: var(--text-light);
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Case Studies Section */
+.case-studies-section {
+    padding: 80px 40px;
+    background-color: var(--white);
+}
+
+.case-studies-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.case-study {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(45, 106, 79, 0.02) 0%, rgba(64, 145, 108, 0.02) 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(64, 145, 108, 0.1);
+    transition: all 0.3s ease;
+}
+
+.case-study:hover {
+    border-color: var(--secondary-green);
+    box-shadow: 0 10px 30px rgba(45, 106, 79, 0.1);
+}
+
+.case-study-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.case-study:hover .case-study-image {
+    transform: scale(1.02);
+}
+
+.case-study-content h3 {
+    color: var(--primary-green);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.case-study-content .client {
+    color: var(--secondary-green);
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.case-study-content p {
+    color: var(--text-dark);
+    opacity: 0.85;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.case-study-content .challenge,
+.case-study-content .solution {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-left: 4px solid var(--secondary-green);
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.results {
+    background-color: rgba(82, 183, 136, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.results ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.results li {
+    color: var(--secondary-green);
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+.read-more {
+    display: inline-block;
+    color: var(--secondary-green);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 2px solid var(--secondary-green);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: var(--secondary-green);
+    color: var(--white);
+}
+
+/* Impact Section */
+.impact-section {
+    padding: 80px 40px;
+    background: linear-gradient(135deg, rgba(45, 106, 79, 0.05) 0%, rgba(64, 145, 108, 0.05) 100%);
+    text-align: center;
+}
+
+.impact-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-dark-green);
+    margin-bottom: 60px;
+}
+
+.impact-stats {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.stat {
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(45, 106, 79, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(45, 106, 79, 0.1);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--secondary-green);
+    margin-bottom: 10px;
+}
+
+.stat p {
+    color: var(--text-dark);
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+/* Case Studies CTA Section */
+.case-studies-cta {
+    padding: 80px 40px;
+    background: linear-gradient(135deg, var(--secondary-green) 0%, var(--primary-green) 100%);
+    text-align: center;
+    color: var(--text-light);
+}
+
+.case-studies-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.case-studies-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 60px 20px;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .case-studies-section {
+        padding: 60px 20px;
+    }
+
+    .case-study {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .case-study-image {
+        height: 250px;
+    }
+
+    .case-study-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .impact-section {
+        padding: 60px 20px;
+    }
+
+    .impact-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .case-studies-cta {
+        padding: 60px 20px;
+    }
+
+    .case-studies-cta h2 {
+        font-size: 1.8rem;
+    }
+}
